@@ -13,8 +13,26 @@ class move:
 class color(Enum):
     CROSS = 1
     CIRCLE = 2
+if __name__ == "__main__":
+    game_over = True
+    game_loop()
 
-board1 = board()
+def game_loop():
+    while True:
+        #handle input
+        #make changes to the board
+        #switch colors
+        #check if game over
+        if game_over:
+            break
+
+def handle_input():
+    if current_color == color.CROSS:
+        print("Cross' turn")
+    else: 
+        print("Circle's turn")
+    #get input
+    #apply the changes to board
 itertj = iter(board1.coords1)
 def print_board():
     a = 0
